@@ -1,2 +1,2 @@
 # top-bg-list
-Created with CodeSandbox
+A simple React app which lists top board games from Tesera and BoardGameGeek
