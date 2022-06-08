@@ -3,7 +3,7 @@ import { Card, Badge } from "react-bootstrap";
 
 export default ({ info }) => (
   <Card key={info.id}>
-    <Card.Img src={info.photo} alt="game image"></Card.Img>
+    <Card.Img src={info.photo} alt="game image"/>
     <Card.ImgOverlay>
       <div className="rating">{info.numRating}</div>
       <Badge className="pull-right" variant="success" title="rating">
@@ -14,7 +14,7 @@ export default ({ info }) => (
       <Card.Title>{info.title}</Card.Title>
       <Card.Text>{info.desc}</Card.Text>
       {info.links.map((link, idx) => (
-        <Card.Link key={idx} as="a" href={link.link} target="_blank">
+        <Card.Link key={idx} as="a" href={link.href} target="_blank">
           {link.title}
         </Card.Link>
       ))}

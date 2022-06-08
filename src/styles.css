@@ -78,3 +78,8 @@
   text-align: center;
   z-index: 10000;
 }
+
+.pagination {
+  justify-content: center;
+  margin: 0.5rem;
+}

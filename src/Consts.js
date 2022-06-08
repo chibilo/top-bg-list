@@ -14,3 +14,5 @@ export const Hosts = {
     sortField: "-ratinggeekbgg"
   }
 };
+
+export const GAME_REQUEST_URL = "https://api.tesera.ru/games";
