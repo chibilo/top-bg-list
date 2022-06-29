@@ -1,6 +1,7 @@
 import React from "react";
 import { Alert } from "react-bootstrap";
 import GameCard from "./GameCard";
+import "./GameList.css";
 
 export default ({ isLoading, data }) => {
 	console.log(data);

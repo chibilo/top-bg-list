@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, Badge } from "react-bootstrap";
+import "./GameCard.css";
 
 export default ({ info }) => (
 	<Card key={info.id}>

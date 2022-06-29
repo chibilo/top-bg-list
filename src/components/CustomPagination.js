@@ -1,5 +1,6 @@
 import { Pagination } from "react-bootstrap";
 import React from "react";
+import "./CustomPagination.css";
 
 export default ({ pageCount, activePage, onChangePage }) => {
 	return (
