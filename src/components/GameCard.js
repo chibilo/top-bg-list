@@ -3,7 +3,7 @@ import { Card, Badge } from "react-bootstrap";
 import "./GameCard.css";
 
 export default ({ info }) => (
-	<Card key={info.id}>
+	<Card>
 		<Card.Img src={info.photo} alt="game image" />
 		<Card.ImgOverlay>
 			<div className="rating">{info.numRating}</div>

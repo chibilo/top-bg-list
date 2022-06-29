@@ -4,14 +4,13 @@ import GameCard from "./GameCard";
 import "./GameList.css";
 
 export default ({ isLoading, data }) => {
-	console.log(data);
 	return (
 		<div className="game-list">
-			<Alert className="alert" show={isLoading} variant="info">
+			<Alert transition={false} className="alert" show={isLoading} variant="info">
 				Loading...
 			</Alert>
 			{data.map((info) => (
-				<GameCard info={info} />
+				<GameCard key={info.id} info={info} />
 			))}
 		</div>
 	);
