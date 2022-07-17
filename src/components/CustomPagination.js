@@ -1,8 +1,8 @@
 import { Pagination } from "react-bootstrap";
-import React from "react";
+import React, { memo } from "react";
 import "./CustomPagination.css";
 
-export default ({ pageCount, activePage, onChangePage }) => {
+export default memo(({ pageCount, activePage, onChangePage }) => {
 	return (
 		<Pagination>
 			{Array.from(Array(pageCount).keys()).map((num, idx) => (
@@ -20,4 +20,4 @@ export default ({ pageCount, activePage, onChangePage }) => {
 			))}
 		</Pagination>
 	);
-};
+});

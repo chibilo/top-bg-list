@@ -1,0 +1,33 @@
+.game-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.game {
+    width: 600px;
+}
+
+.details {
+    min-width: 250px;
+}
+
+.details p {
+    margin: 0;
+    padding: 0.2rem;
+}
+.details p:nth-child(odd) {
+    background-color: #ececec;
+}
+
+@media (max-width: 480px) {
+    .game {
+        width: 340px;
+    }
+
+    .params {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+

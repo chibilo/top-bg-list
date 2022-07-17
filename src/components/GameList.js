@@ -1,16 +1,18 @@
 import React from "react";
-import { Alert } from "react-bootstrap";
 import GameCard from "./GameCard";
 import "./GameList.css";
+import { useHistory } from "react-router-dom";
 
-export default ({ isLoading, data }) => {
+export default ({ data }) => {
+	let history = useHistory();
 	return (
 		<div className="game-list">
-			<Alert transition={false} className="alert" show={isLoading} variant="info">
-				Loading...
-			</Alert>
 			{data.map((info) => (
-				<GameCard key={info.id} info={info} />
+				<GameCard
+					key={info.id}
+					info={info}
+					onClick={(info) => history.push(`/game/${info.alias}`)}
+				/>
 			))}
 		</div>
 	);

@@ -1,7 +1,7 @@
-import React from "react";
+import React, { memo } from "react";
 import "./CustomDropDown.css";
 
-export default ({ value, items, onChange }) => {
+export default memo(({ value, items, onChange }) => {
 	return (
 		<div className="custom-dropdown">
 			{value}
@@ -10,7 +10,8 @@ export default ({ value, items, onChange }) => {
 					<li
 						key={idx}
 						onClick={() => {
-							onChange(val.value ?? val);
+							const newValue = val.value ?? val;
+							if (newValue !== value) onChange(newValue);
 						}}
 					>
 						{val.text ?? val}
@@ -19,4 +20,4 @@ export default ({ value, items, onChange }) => {
 			</ul>
 		</div>
 	);
-};
+});

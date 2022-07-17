@@ -15,4 +15,5 @@ export const Hosts = {
 	},
 };
 
-export const GAME_REQUEST_URL = "https://api.tesera.ru/games";
+export const DEFAULT_SORT_FIELD = "-ratingn10";
+export const DEFAULT_RATING_FIELD = "ratingUser";

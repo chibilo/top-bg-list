@@ -1,13 +1,4 @@
 @import url("https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css");
-.App {
-	font-family: sans-serif;
-	margin: 20px;
-}
-
-.App h1 {
-	text-align: center;
-	margin: 15px;
-}
 
 .pull-right {
 	float: right !important;
